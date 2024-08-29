@@ -1,0 +1,32 @@
+/* .aboutCont{
+    height: calc(100vh - 75px);
+    background-attachment: fixed;
+    position: sticky;
+    background-color: rebeccapurple;
+    top: 75px;
+    overflow: scroll;
+
+
+} */
+ .aboutCont>h1{
+    color: black;
+    display: block;
+    margin: auto;
+ }
+.aboutCont>div{
+    height: calc(100vh - 150px);
+    margin: 20px;
+    background-attachment: fixed;
+    position: sticky;
+    bottom:'20px'; 
+    top: 150px;
+}
+.about1{
+    background-color: #101720;
+}
+.about2{
+    background-color: white;
+}
+.about3{
+    background-color: #101720;
+}

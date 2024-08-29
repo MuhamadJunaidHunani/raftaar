@@ -1,0 +1,95 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 1 0px 0;
+    background-color: #101720d4;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3BC6C6;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #3BC6C6;
+    transition: 0.2s ease-in-out all;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a.active {
+    border-bottom: 2px solid #3BC6C6;
+}
+
+.signup-btn {
+    background-color: #3BC6C6;
+    color: #1A1A2E;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#steering-wheel {
+    transform-origin: center !important;
+    transform: rotate(360deg);
+    transition: transform 0.2s ease-out;
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#steering-wheel img {
+    transform-origin: center;
+    border-radius: 50%;
+    width: 65px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
